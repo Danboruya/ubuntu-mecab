@@ -1,0 +1,6 @@
+# ignore archives
+*.tar.*
+
+# ignore DS_Store
+.DS_Store
+
