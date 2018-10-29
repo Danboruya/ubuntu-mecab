@@ -1,7 +1,8 @@
 # ubuntu-mecab
 
 ## Description
-This repository is dockerfile for mecab/cabocha on ubuntu.
+This repository is dockerfile for mecab/cabocha.  
+This container's base-image is Ubuntu16.04.
 
 ## Requirements
 You need to some following archives.
