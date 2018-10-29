@@ -36,11 +36,12 @@ RUN tar jxvf cabocha-0.69.tar.bz2 \
 RUN apt-get install -y software-properties-common vim \
     && add-apt-repository ppa:jonathonf/python-3.6 \
     && apt-get update \
-    && apt-get install -y build-essential python3.6 python3.6-dev python3-pip python3.6-venv \
-    && python3.6 -m pip install pip --upgrade \
+    && apt-get install -y python3.6 python3.6-dev python3-pip python3.6-venv
+
+RUN python3.6 -m pip install pip --upgrade \
     && pip install flask \
     && pip install numpy \
     && pip install pandas \
     && pip install sklearn \
     && pip install gensim \
-    && pip install mecab-python3
+    && pip install mecab-python3==0.7
