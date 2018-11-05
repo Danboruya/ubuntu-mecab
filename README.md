@@ -24,12 +24,12 @@ docker build -t IMAGENAME:TAG .
 
 ## Run
 
-Onece done, you can use mecab or cabocha from host os terminal.  
+Once done, you can use mecab or cabocha from host os terminal.  
 e.g)  
 ```
-echo "私はテスト用のメッセージを入力した" | docker run --rm -i IMAGENAME cabocha -f2
+echo "私はテスト用のメッセージを入力した" | docker run --rm -i IMAGENAME:TAG cabocha -f2
 # or
-echo "これはテスト用のメッセージです" | docker run --rm -i IMAGENAME mecab
+echo "これはテスト用のメッセージです" | docker run --rm -i IMAGENAME:TAG mecab
 ```
 
 **NOTICE: Docker on linux need root permission for running docker command.**
